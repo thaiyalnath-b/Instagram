@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.w-15 {
+    width: 15%;
+}
+.w-30 {
+    width: 30%;
+}
+.w-55 {
+    width: 55%;
+    border-left: 1px solid rgb(146, 145, 145);
+    /* border-right: 1px solid rgb(146, 145, 145); */
+}
+.logo-text {
+    width: 100px;
+}
+.bi {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+
+.story{
+    height: 120px;
+    padding: 10px;
+}
+.dp {
+    height: 45px;
+    width: 45px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+
+.vs{
+    height: 620px;
+    width: 400px;
+}
+.vst {
+    color: white;
+
+    h4{
+        position: absolute;
+        padding: 5px;
+    }
+}
+
+.gp {
+    gap: 6px;
+    font-size: 1.2em;
+}
+.ho {
+    margin-left: 6px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.ho:hover {
+    background-color: rgb(208, 208, 208);
+    width: 210px;
+    border-radius: 10px;
+}
+.gb {
+    margin-bottom: 35px;
+}
+.pst {
+    padding-left: 60px;
+}
+.image{
+    width: 400px;
+}
+.suggestions  h5{
+   font-size: 16px;
+}
+.suggestions .dp{
+    margin-top: 0px !important;
+}
+.gradient_border {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff00ff, #ff6600, #ffcc00);
+}
+
+.story_dp{
+    width: 80px;
+    border: 4px solid black;
+}
+.profile {
+    width: 100px;
+    height: 100px;
+}

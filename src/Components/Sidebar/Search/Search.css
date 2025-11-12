@@ -1,0 +1,19 @@
+.ip {
+    padding: 8px 15px;
+    width: 350px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.27);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+.sch {
+    border-bottom: 1px solid gray;
+}
+h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
