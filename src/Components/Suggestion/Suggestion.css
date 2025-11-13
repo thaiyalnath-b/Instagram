@@ -1,0 +1,96 @@
+.suggest {
+  width: 350px;
+  padding: 10px;
+}
+
+.suggest-pro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.profile-info h6 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.switch-text {
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.suggest-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.suggest-head p {
+  font-size: 14px;
+}
+
+.suggest-head span {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.suggest-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-details p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.follow-btn {
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.follow-btn.follow {
+  color: #0095f6;
+  color: white;
+}
+
+.follow-btn.unfollow {
+  color: #ed4956;
+}

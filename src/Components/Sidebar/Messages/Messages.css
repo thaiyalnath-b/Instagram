@@ -1,34 +1,43 @@
-.msg {
+.messages-container {
   display: flex;
-  height: 90vh;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
+  height: 100vh;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+}
+
+.sidebar {
+  width: 30%;
+  border-right: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.search-bar {
+  margin: 15px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px solid #dbdbdb;
+  background: #fafafa;
 }
 
 .chat-list {
-  width: 40%;
-  border-right: 1px solid #ddd;
-  padding: 15px;
   overflow-y: auto;
-}
-
-.sch {
-  border-radius: 5px;
-  background-color: #ddd;
-  border: none;
-  width: 96%;
-  padding: 3px 8px;
-  margin: 3px 3px 8px 3px;
+  flex-grow: 1;
 }
 
 .chat-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 8px;
+  padding: 10px 15px;
   cursor: pointer;
-  border-radius: 8px;
   transition: background 0.2s;
 }
 
@@ -37,77 +46,41 @@
 }
 
 .chat-item.active {
-  background: #eaeaea;
+  background: #efefef;
 }
 
-.profile-pic {
+.chat-avatar {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
 }
 
-.chat-info h4 {
-  font-size: 14px;
+.chat-info h5 {
+  font-size: 15px;
+  margin: 0;
 }
 
 .chat-info p {
-  font-size: 12px;
-  color: gray;
+  font-size: 13px;
+  color: #8e8e8e;
   margin: 0;
 }
 
 .chat-time {
-  margin-left: auto;
-  font-size: 12px;
-  color: gray;
+  font-size: 11px;
+  color: #8e8e8e;
 }
 
-.cht {
+.chat-section {
   flex: 1;
-  height: 90vh;
-  width: 100vw;
-  padding-right: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
-  border-left: 1px solid #dbdbdb;
 }
 
 .no-chat {
   text-align: center;
-  color: #555;
-}
-
-.no-chat h1 {
-  font-size: 80px;
-  margin-bottom: 15px;
-}
-
-.no-chat h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.no-chat p {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 20px;
-}
-
-.no-chat button {
-  background-color: #0095f6;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.no-chat button:hover {
-  background-color: #0078d7;
+  color: #737373;
 }
