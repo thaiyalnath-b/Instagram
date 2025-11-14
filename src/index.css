@@ -22,10 +22,6 @@
     width: 100px;
 }
 
-.bi {
-    margin-right: 10px;
-    font-size: 1.2em;
-}
 
 
 .story {
@@ -44,10 +40,12 @@
 .vs {
     height: 620px;
     width: 400px;
+    border-radius: 5px;
 }
 
 .vst {
-    color: white;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
 
     h4 {
         position: absolute;
@@ -58,6 +56,21 @@
 .gp {
     gap: 6px;
     font-size: 1.2em;
+
+    .bi {
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+}
+
+.bc {
+    background-color: rgb(43, 43, 43);
+
+    .bi {
+        font-size: 1.5rem;
+        margin: 0px 10px;
+        color: white;
+    }
 }
 
 .ho {

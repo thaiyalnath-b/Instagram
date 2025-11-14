@@ -19,6 +19,7 @@
 }
 
 .profile-info h6 {
+  height: 40px;
   font-size: 15px;
   font-weight: 600;
 }
@@ -30,12 +31,6 @@
   cursor: pointer;
 }
 
-.suggest-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-}
 
 .suggest-head p {
   font-size: 14px;
@@ -68,9 +63,10 @@
 }
 
 .user-details h6 {
-  margin: 0;
+  margin-top: 0px;
   font-size: 14px;
   font-weight: 500;
+  height: 40px;
 }
 
 .user-details p {

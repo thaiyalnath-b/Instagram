@@ -16,18 +16,19 @@ function Suggestions() {
   };
 
   return (
-    <div className='suggest'>
-      <div className='suggest-pro'>
+    <div className='suggest '>
+      <div className='suggest-pro bg-seco'>
         <img src={profile.profile_pic} alt="Profile" className='profile-pic' />
-        <div className='profile-info'>
-          <h6>{profile.username}</h6>
+        <div className='profile-info '>
+          <h5>{profile.username}</h5>
         </div>
-        <span className='switch-text'>Switch</span>
+        <span className='switch-text ms-auto'>Switch</span>
       </div>
 
-      <div className='suggest-head'>
+      <div className='suggest-head d-flex mt-5'>
         <p>Suggested for you</p>
-        <span>See All</span>
+         <span className='ms-auto'>See All</span>
+        
       </div>
 
       {suggestions.map((user) => (

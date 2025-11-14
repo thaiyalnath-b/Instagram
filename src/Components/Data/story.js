@@ -15,7 +15,7 @@ export const story = [
       username: "foodie_diaries",
       profile_pic: "/assets/pic2.jpg"
     },
-    image: "/assets/s2.avif"
+    image: "/assets/two.webp"
   },
   {
     id: "3",
@@ -24,7 +24,7 @@ export const story = [
       username: "code_with_rahul",
       profile_pic: "/assets/pic3.jpg"
     },
-    image: "/assets/s1.avif"
+    image: "/assets/s3.avif"
   },
   {
     id: "4",

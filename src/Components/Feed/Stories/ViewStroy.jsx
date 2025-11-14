@@ -21,7 +21,7 @@ function ViewStory() {
   }
 
   return (
-    <div>
+    <div className='bc'>
       {story ? (
         <div className='d-flex justify-content-center align-items-center vh-100'>
           <Link to={`/story/${Number(id) - 1}/${tot}`}><i className='bi bi-arrow-left-circle-fill'></i></Link>

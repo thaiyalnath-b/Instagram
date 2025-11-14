@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { profile as mockProfile, followers as mockFollowers } from "../../Data/profile";
+import "./Profile.css"
 
 function Profile() {
   const [profile, setProfile] = useState(mockProfile);
@@ -58,8 +59,7 @@ function Profile() {
       ) : (
         <div>Loading Profile...</div>
       )}
-
-      <h6>Followers</h6>
+      <h5 className="followerh">Followers</h5>
       {followers.length > 0 ? (
         followers.map((follower) => (
           <div key={follower.id} className="d-flex my-2 align-items-center">
