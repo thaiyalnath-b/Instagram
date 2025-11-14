@@ -1,6 +1,11 @@
+.bac {
+  background-color: gray;
+  padding: 40px;
+}
+
 .notifications {
   width: 400px;
-  margin: 20px auto;
+  margin: auto;
   background-color: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 12px;

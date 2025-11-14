@@ -1,22 +1,22 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .expr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 5% 15% 0 15%;
   gap: 4px;
-  background-color: #000; 
-  padding: 4px;
+  background-color: rgb(98, 98, 98);
 }
 
 .exp_item {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   cursor: pointer;
 }

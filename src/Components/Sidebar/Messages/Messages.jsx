@@ -16,7 +16,7 @@ function Messages() {
 
         <input type="text" placeholder="Search" className="search-bar" />
 
-        <h6 className="mt-3">Messages</h6>
+        <h5 className="mt-3">Messages</h5>
 
         <div className="chat-list">
           {chats.map((chat) => (
