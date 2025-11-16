@@ -93,7 +93,7 @@
 
 @media (max-width: 992px) {
   .rel_item {
-   width: 60%;
+    width: 60%;
   }
 
   .rel_item .reel_info h4 {
@@ -111,6 +111,11 @@
 }
 
 @media (max-width: 576px) {
+
+  .rel_item {
+    width: 100%;
+  }
+
   .rel_item .reel_info h4 {
     font-size: 15px;
   }

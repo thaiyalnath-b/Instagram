@@ -24,12 +24,12 @@ function ViewStory() {
     <div className='bc'>
       {story ? (
         <div className='d-flex justify-content-center align-items-center vh-100'>
-          <Link to={`/story/${Number(id) - 1}/${tot}`}><i className='bi bi-arrow-left-circle-fill'></i></Link>
+          <Link to={`/story/${Number(id) - 1}/${tot}`}><i className='bi bi-arrow-left-circle-fill l'></i></Link>
           <div className='vst'>
             <h4><img src={story.user.profile_pic} alt="" style={{ width: "40px", borderRadius: "50%" }} /> {story.user.username}</h4>
             <img className='vs' src={story.image} alt="story" />
           </div>
-          <Link to={`/story/${Number(id) + 1}/${tot}`}><i className='bi bi-arrow-right-circle-fill'></i></Link>
+          <Link to={`/story/${Number(id) + 1}/${tot}`}><i className='bi bi-arrow-right-circle-fill r'></i></Link>
         </div>
       ) : (
         <div>Loading...</div>

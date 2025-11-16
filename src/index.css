@@ -124,14 +124,17 @@
     width: 100px;
     height: 100px;
 }
+
 .foo {
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+
 .head {
     display: none;
 }
+
 .foo {
 
     display: none;
@@ -201,13 +204,36 @@
     .ho:hover {
         width: 50px;
     }
+
     .story {
         padding-top: 75px;
     }
 
+    .bc {
+        background-color: rgb(43, 43, 43);
+
+        .bi {
+            font-size: 1.5rem;
+            z-index: 1;
+            color: darkred;
+        }
+        .r {
+            position: absolute;
+            right: 10px;
+        }
+        .l {
+            position: absolute;
+        }
+        .vs {
+            object-fit: cover;
+        }
+    }
+
+
     .head {
         display: block;
     }
+
     .foo {
         display: block;
     }
