@@ -1,4 +1,3 @@
-
 .rel {
   height: 100vh;
   width: 100%;
@@ -92,14 +91,35 @@
 }
 
 
-@media (max-width: 768px) {
-  .rel_item .reel_info h4 { font-size: 16px; }
-  .rel_item .reel_info p { font-size: 14px; }
-  .rel_item .reel_actions span { font-size: 14px; padding: 4px 8px; }
+@media (max-width: 992px) {
+  .rel_item {
+   width: 60%;
+  }
+
+  .rel_item .reel_info h4 {
+    font-size: 16px;
+  }
+
+  .rel_item .reel_info p {
+    font-size: 14px;
+  }
+
+  .rel_item .reel_actions span {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
 }
 
-@media (max-width: 480px) {
-  .rel_item .reel_info h4 { font-size: 15px; }
-  .rel_item .reel_info p { font-size: 13px; }
-  .rel_item .reel_actions span { padding: 4px 6px; }
+@media (max-width: 576px) {
+  .rel_item .reel_info h4 {
+    font-size: 15px;
+  }
+
+  .rel_item .reel_info p {
+    font-size: 13px;
+  }
+
+  .rel_item .reel_actions span {
+    padding: 4px 6px;
+  }
 }

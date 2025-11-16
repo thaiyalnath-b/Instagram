@@ -13,7 +13,7 @@
 }
 
 .w-55 {
-    width: 55%;
+    width: 70%;
     border-left: 1px solid rgb(146, 145, 145);
 
 }
@@ -25,7 +25,8 @@
 
 
 .story {
-    height: 120px;
+    width: 100%;
+    overflow-x: scroll;
     padding: 10px;
 }
 
@@ -61,7 +62,12 @@
         margin-right: 10px;
         font-size: 1.2em;
     }
+
+    .insta {
+        display: none;
+    }
 }
+
 
 .bc {
     background-color: rgb(43, 43, 43);
@@ -76,8 +82,7 @@
 .ho {
     margin-left: 6px;
     padding-left: 15px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 14px;
 }
 
 .ho:hover {
@@ -86,16 +91,18 @@
     border-radius: 10px;
 }
 
+
 .gb {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .pst {
-    padding-left: 60px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .image {
-    width: 400px;
+    width: 100%;
 }
 
 .gradient_border {
@@ -116,4 +123,92 @@
 .profile {
     width: 100px;
     height: 100px;
+}
+.foo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.head {
+    display: none;
+}
+.foo {
+
+    display: none;
+}
+
+
+
+
+/* Responsive */
+
+/* Tablet */
+
+@media (max-width: 992px) {
+    .w-30 {
+        display: none;
+    }
+
+    .ho {
+        span {
+            display: none;
+        }
+    }
+
+    .ho:hover {
+        width: 50px;
+    }
+
+    .w-15 {
+        width: 10%;
+    }
+
+    .w-55 {
+        width: 90%;
+    }
+
+    .gp {
+        .insta {
+            display: block;
+            color: black;
+            padding-left: 5px;
+        }
+
+        .logo-text {
+            display: none;
+        }
+    }
+}
+
+
+
+/* Mobile */
+@media (max-width: 576px) {
+    .w-15 {
+        display: none;
+    }
+
+    .w-55 {
+        width: 100%;
+    }
+
+    .ho {
+        span {
+            display: none;
+        }
+    }
+
+    .ho:hover {
+        width: 50px;
+    }
+    .story {
+        padding-top: 75px;
+    }
+
+    .head {
+        display: block;
+    }
+    .foo {
+        display: block;
+    }
 }
