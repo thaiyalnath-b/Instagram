@@ -45,7 +45,7 @@ function Messages() {
         {selectedChat ? (
           <Chat chat={selectedChat} />
         ) : (
-          <div className="no-chat">
+          <div className="no-chat ">
             <i className="bi bi-send fs-1"></i>
             <h4>Your messages</h4>
             <p>Send a message to start a chat.</p>

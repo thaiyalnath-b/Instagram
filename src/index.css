@@ -206,7 +206,8 @@
     }
 
     .story {
-        padding-top: 75px;
+        padding-top: 80px;
+        padding-left: 45%;
     }
 
     .bc {
@@ -236,5 +237,11 @@
 
     .foo {
         display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .story{
+        padding-left: 60%;
     }
 }
