@@ -88,5 +88,10 @@
 }
 
 .follow-btn.unfollow {
-  color: #ed4956;
+  background-color: gainsboro;
+  color: grey;
+}
+.follow-btn.unfollow:hover {
+  background-color: gainsboro;
+  color: grey;
 }
