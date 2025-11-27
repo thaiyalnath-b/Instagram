@@ -1,33 +1,33 @@
 export const profile = {
   id: 101,
   username: "itz_thaiyal_18",
-  profile_pic: "/assets/pic1.jpg",
+  profile_pic: "assets/suggest/wal2.jpg",
 };
 
 export const suggestions = [
   {
     id: 101,
-    username: "tech_with_nik",
-    profile_pic: "/assets/pic1.jpg",
+    username: "codecraft_aaron",
+    profile_pic: "/assets/suggest/sug1.avif",
   },
   {
     id: 102,
-    username: "wanderlust_emma",
-    profile_pic: "/assets/pic2.jpg",
+    username: "travelwith_mia",
+    profile_pic: "/assets/suggest/sug2.avif",
   },
   {
     id: 103,
-    username: "bakes_by_olivia",
-    profile_pic: "/assets/pic3.jpg",
+    username: "sweetbakes_by_lara",
+    profile_pic: "/assets/suggest/sug3.avif",
   },
   {
     id: 104,
-    username: "design_with_lee",
-    profile_pic: "/assets/pic4.jpg",
+    username: "artistry_by_kai",
+    profile_pic: "/assets/suggest/sug4.avif",
   },
   {
     id: 105,
-    username: "guitar_john",
-    profile_pic: "/assets/pic5.jpg",
+    username: "strings_of_noah",
+    profile_pic: "/assets/suggest/sug5.avif",
   },
 ];

@@ -2,55 +2,59 @@ export const story = [
   {
     id: "1",
     user: {
-      id: 101,
-      username: "travel_with_amy",
-      profile_pic: "/assets/pic1.jpg"
+      id: 201,
+      username: "wander_with_emma",
+      profile_pic: "/assets/Strories/str1.avif"
     },
-    image: "/assets/s1.avif"
+    image: "/assets/Strories/str7.avif"
   },
   {
     id: "2",
     user: {
-      id: 102,
-      username: "foodie_diaries",
-      profile_pic: "/assets/pic2.jpg"
+      id: 202,
+      username: "chef_oliver",
+      profile_pic: "/assets/Strories/str2.avif"
     },
-    image: "/assets/two.webp"
+    image: "/assets/Strories/str8.avif"
   },
+
   {
     id: "3",
     user: {
-      id: 103,
-      username: "code_with_rahul",
-      profile_pic: "/assets/pic3.jpg"
+      id: 203,
+      username: "rahul.codes",
+      profile_pic: "/assets/Strories/str3.avif"
     },
-    image: "/assets/s3.avif"
+    image: "/assets/Strories/str9.avif"
   },
+
   {
     id: "4",
     user: {
-      id: 104,
-      username: "fit_with_sara",
-      profile_pic: "/assets/pic4.jpg"
+      id: 204,
+      username: "sara_fitness",
+      profile_pic: "/assets/Strories/str4.avif"
     },
-    image: "/assets/s4.avif"
+    image: "/assets/Strories/str10.avif"
   },
+
   {
     id: "5",
     user: {
-      id: 105,
-      username: "art_by_lucas",
-      profile_pic: "/assets/pic5.jpg"
+      id: 205,
+      username: "lucas_artworks",
+      profile_pic: "/assets/Strories/str5.avif"
     },
-    image: "/assets/s5.avif"
+    image: "/assets/Strories/str11.avif"
   },
+
   {
     id: "6",
     user: {
-      id: 106,
-      username: "foodie_diaries",
-      profile_pic: "/assets/pic2.jpg"
+      id: 206,
+      username: "nature_with_zoe",
+      profile_pic: "/assets/Strories/str6.avif"
     },
-    image: "/assets/s2.avif"
+    image: "/assets/Strories/str12.avif"
   }
 ];
