@@ -12,7 +12,7 @@ function Sidebar() {
                     <img className='logo-text' src="/assets/Instagram_text.png" alt="" />
                 </a>
                 
-                <div className='mt-2 ho'><i className="bi bi-house-door-fill"></i><span>Home</span></div>
+                <div className='mt-2 ho sp'><i className="bi bi-house-door-fill"></i><span>Home</span></div>
                 <div className='ho' onClick={() => { navigate('/search') }}><i className="bi bi-search"></i><span>Search</span></div>
                 <div className='ho' onClick={() => { navigate('/explore') }}><i className="bi bi-compass"></i><span>Explore</span></div>
                 <div className='ho' onClick={() => { navigate('/reels') }}><i className="bi bi-play-btn"></i><span>Reels</span></div>

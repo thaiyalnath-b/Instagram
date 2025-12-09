@@ -12,7 +12,7 @@ function Stories() {
   }, []);
 
   return (
-    <div className='story d-flex justify-content-center st'>
+    <div className='story d-flex justify-content-center st pt-4'>
       <div className='d-none'>{tot = stories.length}</div>
       {stories.length > 0 ? (
         stories.map((story) => (
