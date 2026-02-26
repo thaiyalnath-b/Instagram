@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 .w-15 {
   width: 15%;
 }
@@ -12,20 +16,18 @@
   width: 70%;
 }
 
-
-
 .w-55 {
   overflow-y: auto;
   height: 100vh;
 }
 
-body {
-  overflow: hidden;
-}
-
 
 @media (max-width: 768px) {
+  .w-15{
+    width: 7%;
+  }
   .w-55 {
+    width: 86%;
     padding-top: 56px;
   }
 }
