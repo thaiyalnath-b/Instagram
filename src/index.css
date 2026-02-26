@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow: hidden;
-}
-
 .w-15 {
   width: 15%;
 }
@@ -16,10 +12,6 @@ body {
   width: 70%;
 }
 
-.w-55 {
-  overflow-y: auto;
-  height: 100vh;
-}
 
 
 @media (max-width: 768px) {
