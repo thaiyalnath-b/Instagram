@@ -1,55 +1,49 @@
-import React, { useEffect, useState } from 'react'
-import "./Messages.css"
-import chats from '../../Data/chats';
-import Chat from './Chat';
+import React, { useState } from "react";
+import "./Messages.css";
+import chats from "../../Data/chats";
+import Chat from "./Chat";
 
 function Messages() {
   const [selectedChat, setSelectedChat] = useState(null);
 
   return (
-    <div className="messages-container">
-      <div className="sidebar">
-        <div className="sidebar-header">
+    <div className="dm-container">
+      <div className={`dm-sidebar ${selectedChat ? "hide-mobile" : ""}`}>
+        <div className="dm-header">
           <h5>itz_thaiyal_18</h5>
           <i className="bi bi-pencil-square"></i>
         </div>
 
-        <input type="text" placeholder="Search" className="search-bar" />
+        <input type="text" placeholder="Search" className="dm-search" />
 
-        <h5 className="mt-3">Messages</h5>
-
-        <div className="chat-list">
+        <div className="dm-list">
           {chats.map((chat) => (
             <div
               key={chat.id}
-              className={`chat-item ${selectedChat?.id === chat.id ? "active" : ""
-                }`}
+              className={`dm-item ${
+                selectedChat?.id === chat.id ? "active" : ""
+              }`}
               onClick={() => setSelectedChat(chat)}
             >
-              <img
-                src={chat.profile_pic}
-                alt={chat.username}
-                className="chat-avatar"
-              />
-              <div className="chat-info">
-                <h5>{chat.username}</h5>
+              <img src={chat.profile_pic} alt="" />
+              <div>
+                <h6>{chat.username}</h6>
                 <p>{chat.last_message}</p>
               </div>
-              <span className="chat-time">{chat.time}</span>
+              <span>{chat.time}</span>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="chat-section">
+      <div className="dm-chat">
         {selectedChat ? (
-          <Chat chat={selectedChat} />
+          <Chat chat={selectedChat} onBack={() => setSelectedChat(null)} />
         ) : (
-          <div className="no-chat ">
-            <i className="bi bi-send fs-1"></i>
+          <div className="dm-empty">
+            <i className="bi bi-send"></i>
             <h4>Your messages</h4>
             <p>Send a message to start a chat.</p>
-            <button className="btn btn-primary">Send Message</button>
           </div>
         )}
       </div>
@@ -57,5 +51,4 @@ function Messages() {
   );
 }
 
-
-export default Messages
+export default Messages;

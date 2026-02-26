@@ -1,0 +1,36 @@
+.mobile-header {
+display: none;
+}
+
+@media (max-width: 768px) {
+.mobile-header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 56px;
+background: #ffffff;
+border-bottom: 1px solid #dbdbdb;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 16px;
+z-index: 1000;
+}
+
+.mobile-logo {
+height: 32px;
+object-fit: contain;
+cursor: pointer;
+}
+
+.mobile-actions {
+display: flex;
+gap: 18px;
+}
+
+.mobile-actions i {
+font-size: 22px;
+cursor: pointer;
+}
+}

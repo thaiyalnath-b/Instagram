@@ -1,86 +1,103 @@
-.messages-container {
+.dm-container {
   display: flex;
-  height: 100vh;
-  border: 1px solid #dbdbdb;
+  height: calc(100vh - 40px);
   background: #fff;
+  border: 1px solid #dbdbdb;
 }
 
-.sidebar {
-  width: 30%;
+.dm-sidebar {
+  width: 35%;
   border-right: 1px solid #dbdbdb;
   display: flex;
   flex-direction: column;
 }
 
-.sidebar-header {
+.dm-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+  padding: 16px;
   border-bottom: 1px solid #dbdbdb;
 }
 
-.search-bar {
-  margin: 15px;
-  padding: 7px 10px;
+.dm-search {
+  margin: 12px;
+  padding: 8px 12px;
   border-radius: 8px;
-  border: 1px solid #dbdbdb;
-  background: #fafafa;
-}
-
-.chat-list {
-  overflow-y: auto;
-  flex-grow: 1;
-}
-
-.chat-item {
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.chat-item:hover {
-  background: #f5f5f5;
-}
-
-.chat-item.active {
+  border: none;
   background: #efefef;
 }
 
-.chat-avatar {
+.dm-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.dm-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.dm-item:hover {
+  background: #f5f5f5;
+}
+
+.dm-item.active {
+  background: #efefef;
+}
+
+.dm-item img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 12px;
 }
 
-.chat-info h5 {
-  font-size: 15px;
+.dm-item h6 {
   margin: 0;
+  font-size: 14px;
 }
 
-.chat-info p {
-  font-size: 13px;
+.dm-item p {
+  margin: 0;
+  font-size: 12px;
   color: #8e8e8e;
-  margin: 0;
 }
 
-.chat-time {
+.dm-item span {
+  margin-left: auto;
   font-size: 11px;
   color: #8e8e8e;
 }
 
-.chat-section {
+.dm-chat {
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.no-chat {
+.dm-empty {
+  margin: auto;
   text-align: center;
   color: #737373;
+}
+
+.dm-empty i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .dm-sidebar.hide-mobile {
+    display: none;
+  }
+
+  .dm-sidebar {
+    width: 100%;
+  }
+
+  .dm-chat {
+    width: 100%;
+  }
 }

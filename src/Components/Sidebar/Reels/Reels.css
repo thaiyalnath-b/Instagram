@@ -1,130 +1,82 @@
-.rel {
-  height: 100vh;
-  width: 100%;
+.reels-container {
+  position: fixed;
+  inset: 0;
+  background: #000;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  background-color: #000;
 }
 
-
-.rel::-webkit-scrollbar {
-  width: 0;
+.reels-container::-webkit-scrollbar {
+  display: none;
 }
 
-
-.rel_item {
-  position: relative;
-  width: 35%;
-  margin: auto;
+.reel {
   height: 100vh;
-  scroll-snap-align: start;
-  overflow: hidden;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: start;
+  position: relative;
 }
 
-
-.rel_vid {
-  width: 100%;
-  height: 100%;
+.reel-video {
+  height: 100vh;
+  aspect-ratio: 9 / 16;
   object-fit: cover;
+  max-width: 420px;
+  width: 100%;
+  background: #000;
 }
 
-.rel_item .reel_overlay {
+.reel-overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  max-width: 420px;
   padding: 20px;
   color: #fff;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
 }
 
-.rel_item .reel_info {
-  max-width: 70%;
-}
-
-.rel_item .reel_info h4 {
-  font-size: 18px;
-  font-weight: 600;
+.reel-info h4 {
+  font-size: 16px;
   margin-bottom: 6px;
 }
 
-.rel_item .reel_info p {
-  font-size: 15px;
+.reel-info p {
+  font-size: 14px;
   opacity: 0.9;
-  line-height: 1.4;
 }
 
-.rel_item .reel_actions {
+.reel-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+.reel-actions span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  font-size: 16px;
-}
-
-.rel_item .reel_actions span {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 6px 10px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  font-size: 14px;
   cursor: pointer;
 }
 
-.rel_item .reel_actions span:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: scale(1.1);
+.reel-actions i {
+  font-size: 22px;
+  margin-bottom: 4px;
 }
 
-.rel_item .reel_actions i {
-  font-size: 20px;
-  color: #ff4757;
-}
-
-
-@media (max-width: 992px) {
-  .rel_item {
-    width: 60%;
+@media (max-width: 768px) {
+  .reel-video {
+    max-width: 100%;
   }
 
-  .rel_item .reel_info h4 {
-    font-size: 16px;
-  }
-
-  .rel_item .reel_info p {
-    font-size: 14px;
-  }
-
-  .rel_item .reel_actions span {
-    font-size: 14px;
-    padding: 4px 8px;
-  }
-}
-
-@media (max-width: 576px) {
-
-  .rel_item {
-    width: 100%;
-  }
-
-  .rel_item .reel_info h4 {
-    font-size: 15px;
-  }
-
-  .rel_item .reel_info p {
-    font-size: 13px;
-  }
-
-  .rel_item .reel_actions span {
-    padding: 4px 6px;
+  .reel-overlay {
+    max-width: 100%;
   }
 }

@@ -1,0 +1,78 @@
+.feed {
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.post {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.post-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.post-username {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.post-image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.post-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 0;
+}
+
+.icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:active {
+  transform: scale(0.85);
+}
+
+.liked {
+  color: red;
+  fill: red;
+}
+
+.post-likes {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.post-caption {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .feed {
+    padding: 10px;
+  }
+}

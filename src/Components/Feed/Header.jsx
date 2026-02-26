@@ -1,21 +1,31 @@
-import React from 'react'
-import { useNavigate } from "react-router-dom"
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Header.css";
 
 function Header() {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
+  return (<div className="mobile-header">
+    <img
+      src="/assets/Instagram_text.png"
+      alt="Instagram"
+      className="mobile-logo"
+      onClick={() => navigate("/")}
+    />
+    <div className="mobile-actions">
+      <i
+        className="bi bi-heart"
+        onClick={() => navigate("/notifications")}
+      ></i>
 
-    return (
-        <div className='position-fixed d-flex justify-content-between bg-dark text-light w-100'>
-            <a href="#" className='p-3'>
-                <img className='logo-text' src="/assets/ig.png" alt="" />
-            </a>
-            <div className='d-flex mt-3 me-3'>
-                <div className='ho me-3' onClick={() => { navigate('/notifications') }}><i className="bi bi-heart"></i><span>Notifications</span></div>
-                <div className='ho me-2' onClick={() => { navigate('/messages') }}><i className="bi bi-chat-dots"></i><span>Messages</span></div>
-            </div>
-        </div>
-    )
+      <i
+        className="bi bi-chat-dots"
+        onClick={() => navigate("/messages")}
+      ></i>
+    </div>
+  </div>
+
+  );
 }
 
-export default Header
+export default Header;

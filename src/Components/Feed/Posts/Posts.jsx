@@ -1,43 +1,71 @@
-import React from "react";
-import { posts } from "../../Data/Posts";
+import React, { useState } from "react";
+import { posts as mockPosts } from "../../Data/Posts";
+import { Heart, MessageCircle, Send } from "lucide-react";
+import './Posts.css'
 
 function Posts() {
+  const [posts, setPosts] = useState(
+    mockPosts.map((post) => ({
+      ...post,
+      liked: false,
+    }))
+  );
+
+  const handleLike = (id) => {
+    setPosts((prev) =>
+      prev.map((post) =>
+        post.id === id
+          ? {
+              ...post,
+              liked: !post.liked,
+              likes: post.liked ? post.likes - 1 : post.likes + 1,
+            }
+          : post
+      )
+    );
+  };
+
   return (
-    <div className="d-flex justify-content-center pst">
-      {posts.length > 0 ? (
-        <div>
-          {posts.map((post) => (
-            <div className="my-3" key={post.id}>
-              <div className="d-flex my-2 align-items-center">
-                <img
-                  className="rounded-circle dp"
-                  src={post.user.profile_pic}
-                  alt={post.user.username}
-                />
-                <h5 className="mt-2 ms-2">{post.user.username}</h5>
-              </div>
+    <div className="feed">
+      {posts.map((post) => (
+        <div className="post" key={post.id}>
+          <div className="post-header">
+            <img
+              className="post-avatar"
+              src={post.user.profile_pic}
+              alt={post.user.username}
+            />
+            <span className="post-username">{post.user.username}</span>
+          </div>
 
-              <img className="image" src={post.image} alt="post" />
+          <div
+            className="post-image-wrapper"
+            onDoubleClick={() => handleLike(post.id)}
+          >
+            <img className="post-image" src={post.image} alt="post" />
+          </div>
 
-              <div className="icons my-2">
-                <i className="bi bi-heart"></i>
-                <i className="bi bi-chat mx-3"></i>
-                <i className="bi bi-send"></i>
-              </div>
+          <div className="post-actions">
+            <Heart
+              className={`icon ${post.liked ? "liked" : ""}`}
+              onClick={() => handleLike(post.id)}
+            />
+            <MessageCircle className="icon" />
+            <Send className="icon" />
+          </div>
 
-              <div>
-                <b>{post.likes} Likes</b>
-              </div>
+          <div className="post-likes">
+            {post.likes} likes
+          </div>
 
-              <div>
-                <p>{post.caption}</p>
-              </div>
-            </div>
-          ))}
+          <div className="post-caption">
+            <span className="post-username">
+              {post.user.username}
+            </span>{" "}
+            {post.caption}
+          </div>
         </div>
-      ) : (
-        <div>Loading Posts...</div>
-      )}
+      ))}
     </div>
   );
 }

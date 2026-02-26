@@ -1,53 +1,66 @@
 .suggest {
-  width: 350px;
-  padding: 10px 40px;
+  width: 100%;
+  max-width: 320px;
+  padding: 0 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
 }
 
-.suggest-pro {
+.suggest-profile {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .profile-pic {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
-.profile-info h6 {
-  height: 40px;
-  font-size: 15px;
+.username {
+  font-size: 14px;
   font-weight: 600;
 }
 
 .switch-text {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 600;
   color: #0095f6;
-  font-size: 14px;
-  font-weight: 500;
   cursor: pointer;
 }
 
-
-.suggest-head p {
-  font-size: 14px;
+.switch-text:hover {
+  opacity: 0.7;
 }
 
-.suggest-head span {
+.suggest-head {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
+  color: #8e8e8e;
+  margin-bottom: 15px;
+}
+
+.see-all {
+  color: #262626;
   font-weight: 600;
   cursor: pointer;
+}
+
+.see-all:hover {
+  opacity: 0.6;
 }
 
 .suggest-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .user-info {
@@ -57,42 +70,45 @@
 }
 
 .user-pic {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.user-details h6 {
-  margin-top: 0px;
+.user-name {
   font-size: 14px;
+  margin-right: 10px;
   font-weight: 500;
-  height: 40px;
-}
-
-.user-details p {
-  margin: 0;
-  font-size: 12px;
 }
 
 .follow-btn {
   border: none;
   background: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
+  padding: 0;
 }
 
 .follow-btn.follow {
-  color: #0095f6;
   color: white;
 }
 
-.follow-btn.unfollow {
-  background-color: gainsboro;
-  color: grey;
+.follow-btn.follow:hover {
+  opacity: 0.6;
 }
+
+.follow-btn.unfollow {
+  color: #262626;
+}
+
 .follow-btn.unfollow:hover {
-  background-color: gainsboro;
-  color: grey;
+  opacity: 0.6;
+}
+
+@media (max-width: 992px) {
+  .suggest {
+    display: none;
+  }
 }

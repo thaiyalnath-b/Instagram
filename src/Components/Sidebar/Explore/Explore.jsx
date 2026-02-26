@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { exploreData } from "../../Data/explore";
-import "./Explore.css"
+import "./Explore.css";
 
 function Explore() {
   const [explorePosts, setExplorePosts] = useState([]);
@@ -10,23 +10,25 @@ function Explore() {
   }, []);
 
   return (
-    <div className="expr">
-      {explorePosts.map((post) => (
-        <div key={post.id} className="exp_item">
-          <img src={post.post_image} alt={post.username} />
+    <div className="explore-wrapper">
+      <div className="explore-grid">
+        {explorePosts.map((post) => (
+          <div key={post.id} className="explore-item">
+            <img src={post.post_image} alt="" />
 
-          <div className="overlay">
-            <span>
-              <i className="bi bi-heart-fill me-1"></i>
-              {post.likes}
-            </span>
-            <span>
-              <i className="bi bi-chat-fill me-1"></i>
-              {post.comments.length}
-            </span>
+            <div className="explore-overlay">
+              <span>
+                <i className="bi bi-heart-fill"></i>
+                {post.likes}
+              </span>
+              <span>
+                <i className="bi bi-chat-fill"></i>
+                {post.comments.length}
+              </span>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

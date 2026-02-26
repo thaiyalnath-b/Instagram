@@ -1,31 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { story as mockStory } from '../../Data/story';
+import { story as mockStory } from "../../Data/story";
+import "./Stories.css";
 
 function Stories() {
   const [stories, setStories] = useState([]);
   const navigate = useNavigate();
-  let tot = 0;
 
   useEffect(() => {
     setStories(mockStory);
   }, []);
 
   return (
-    <div className='story d-flex justify-content-center st pt-4'>
-      <div className='d-none'>{tot = stories.length}</div>
-      {stories.length > 0 ? (
-        stories.map((story) => (
-          <div key={story.id} className='mx-2' onClick={() => { navigate(`/story/${story.id}/${tot}`) }}>
-            <div className='gradient_border'>
-              <img src={story.user.profile_pic} alt="dp" className='story_dp rounded-circle' />
+    <div className="stories-wrapper">
+      <div className="stories">
+        {stories.map((story) => (
+          <div
+            key={story.id}
+            className="story-item"
+            onClick={() => navigate(`/story/${story.id}`)}
+          >
+            <div className="story-ring">
+              <img
+                src={story.user.profile_pic}
+                alt={story.user.username}
+                className="story-avatar"
+              />
             </div>
-            <p className='text-truncate mx-1' style={{ width: "75px" }}>{story.user.username}</p>
+            <span className="story-username">
+              {story.user.username}
+            </span>
           </div>
-        ))
-      ) : (
-        <p>Loading</p>
-      )}
+        ))}
+      </div>
     </div>
   );
 }

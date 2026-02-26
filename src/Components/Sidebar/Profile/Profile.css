@@ -1,7 +1,104 @@
-.followerh {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  font-size: 23px;
-  font-weight: 700;
+.profile-wrapper {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.profile-header {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-top h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.edit-btn,
+.save-btn {
+  border: 1px solid #dbdbdb;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.save-btn {
+  background: #0095f6;
+  color: #fff;
+  border: none;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 30px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.profile-bio {
+  font-size: 14px;
+  color: #262626;
+}
+
+.edit-input {
+  border: 1px solid #dbdbdb;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.followers-section {
+  border-top: 1px solid #dbdbdb;
+  padding-top: 20px;
+}
+
+.followers-section h3 {
+  margin-bottom: 15px;
+}
+
+.follower-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.follower-item button {
+  background: #efefef;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .profile-stats {
+    justify-content: center;
+  }
 }
